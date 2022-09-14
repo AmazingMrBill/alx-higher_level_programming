@@ -1,20 +1,15 @@
 #!/usr/bin/python3
-"""2-square.py"""
+""" Creating a square class """
 
 
 class Square:
-    """Defines a square"""
-
+    """ Defining a class square """
     def __init__(self, size=0):
-        """
-        Creates an instance of Square
-        Args:
-            size: size of the square
-        """
-        if not isinstance(size, int):
+        """ Initializing a square class
+        Args: size=0: size of the square
+         """
+        if type(size) is not int:
             raise TypeError("size must be an integer")
-
         if size < 0:
             raise ValueError("size must be >= 0")
-
-        self.__size = 
+        self.__size = size
